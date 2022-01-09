@@ -16,24 +16,24 @@ def numeric_accepted(func):
 
 @numeric_accepted
 def celcius_to_fahrenheit(celcius: TEMP) -> float:
-    return (celcius * 9/5) + 32
+    return round((celcius * 9/5) + 32, 2)
 
 @numeric_accepted
 def celcius_to_kelvin(celcius: TEMP) -> float:
-    return celcius + 273.15
+    return round(celcius + 273.15, 2)
 
 @numeric_accepted
 def fahrenheit_to_celcius(fahrenheit: TEMP) -> float:
-    return (fahrenheit - 32) * 5/9
+    return round((fahrenheit - 32) * 5/9, 2)
 
 @numeric_accepted
 def fahrenheit_to_kelvin(fahrenheit: TEMP) -> float:
-    return (fahrenheit - 32) * 5/9 + 273.15
+    return round((fahrenheit - 32) * 5/9 + 273.15, 2)
 
 @numeric_accepted
 def kelvin_to_celcius(kelvin: TEMP) -> float:
-    return kelvin - 273.15
+    return round(kelvin - 273.15, 2)
 
 @numeric_accepted
 def kelvin_to_fahrenheit(kelvin: TEMP) -> float:
-    return (kelvin - 273.15) * 9/5 + 32
+    return round((kelvin - 273.15) * 9/5 + 32, 2)
